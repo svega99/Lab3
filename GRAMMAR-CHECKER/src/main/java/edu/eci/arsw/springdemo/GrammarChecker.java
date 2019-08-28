@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 public class GrammarChecker {
 
 	@Autowired 
-        @Qualifier("EnglishSC")
+        @Qualifier("SpanishSC")
         SpellChecker sc;
 
 	String x;
         
-        
+ 
 	public SpellChecker getSpellChecker() {
 		return sc;
 	}
