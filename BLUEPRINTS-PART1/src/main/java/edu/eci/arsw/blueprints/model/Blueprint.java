@@ -37,6 +37,10 @@ public class Blueprint {
         return author;
     }
     
+    public void setPoints(List<Point> points){
+        this.points=points;
+    }
+    
     public List<Point> getPoints() {
         return points;
     }
