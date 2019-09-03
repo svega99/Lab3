@@ -9,11 +9,19 @@ The above requires:
 
 1.	Add the dependencies of Spring. Add the Spring settings. Configure the application - by means of annotations - so that the persistence scheme is injected when the BlueprintServices bean is created. Complete the getBluePrint() and getBlueprintsByAuthor() operations. Implement everything required from the lower layers (for now, the available persistence scheme InMemoryBlueprintPersistence) by adding the corresponding tests in InMemoryPersistenceTest.
 
+	Se añaden las anotaciones.
+	
 	![Alt text](img/1.1.PNG)
+	
+	Se complementan los metodos  getBluePrint() y getBlueprintsByAuthor() en el service. 
 	
 	![Alt text](img/1.2.PNG)
 	
+	Se añade las anotaciones.
+	
 	![Alt text](img/1.3.PNG)
+	
+	Se implementan los metodos  getBluePrint() y getBlueprintsByAuthor()
 	
 	![Alt text](img/1.4.PNG)
 
