@@ -23,10 +23,16 @@ To illustrate the use of the Spring framework, and the development environment f
 
 1.	Modify the configuration with annotations so that the Bean 'GrammarChecker' now makes use of the SpanishSpellChecker class (so that GrammarChecker is injected with EnglishSpellChecker instead of SpanishSpellChecker.) Verify the new result.
 
+	Se añade una anotacion de Qualifier para saber a que componente nos vamos a referir, en este caso al "SpellChecker en español".
+	
 	![Alt text](img/2.1.PNG)
+	
+	Se nombra cada componente.
 	
 	![Alt text](img/2.2.PNG)
 	
 	![Alt text](img/2.3.PNG)
+	
+	Ahora el programa revisa en español.
 	
 	![Alt text](img/2.4.PNG)

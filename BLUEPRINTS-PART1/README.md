@@ -27,17 +27,26 @@ The above requires:
 
 2.	Make a program in which you create (through Spring) an instance of BlueprintServices, and rectify its functionality: register plans, consult plans, register specific plans, etc.
 
+	Se crean tres objetos del tipo Blueprint. 
 
 	![Alt text](img/2.1.PNG)
 	
+	Se consulta por autor y nombre y luego solo por autor.
+	
 	![Alt text](img/2.2.PNG)
+	
+	Ejecución:
 	
 	![Alt text](img/2.3.PNG)
 	
 
 3.	You want the plan query operations to perform a filtering process, before returning the planes consulted. These filters are looking to reduce the size of the plans, removing redundant data or simply sub-sampling, before returning them. Adjust the application (adding the abstractions and implementations you consider) so that the BlueprintServices class is injected with one of two possible 'filters' (or possible future filters). The use of more than one at a time is not contemplated:
 
+	Se añade un nuevo parametro al servicio con su respectivas anotaciones.
+
 	![Alt text](img/3.1.PNG)
+	
+	Se crea una nueva interfaz.
 	
 	![Alt text](img/3.2.PNG)
 
@@ -53,16 +62,27 @@ The above requires:
 
 4.	Add the corresponding tests to each of these filters, and test its operation in the test program, verifying that only by changing the position of the annotations - without changing anything else - the program returns the filtered planes in the way (A) or in the way (B).
 
+	Se implementa una prueba para el "Redundancy filtering".
 		
 	![Alt text](img/41.PNG)
 	
+	Se cambia la anotacion a "Redundancy"
+	
 	![Alt text](img/4.1.PNG)
+	
+	La unica prueba que falla es la que involucra "Subsampling".
 	
 	![Alt text](img/4.2.PNG)
 	
+	Se implementa una prueba para el "Subsampling filtering".
+	
 	![Alt text](img/42.PNG)
 	
+	Se cambia la anotacion a "Subsampling"
+	
 	![Alt text](img/4.3.PNG)
+	
+	La unica prueba que falla es la que involucra "Redundancy".
 	
 	![Alt text](img/4.4.PNG)
 	
